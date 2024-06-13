@@ -1,9 +1,11 @@
 import "./App.css";
-import UsersList from "./components/usersList/usersList";
+import { Header } from "./components/Header";
+import UsersList from "./components/UsersList";
 
 function App() {
   return (
     <>
+      <Header />
       <UsersList />
     </>
   );

@@ -3,9 +3,9 @@ import { fetchUsers } from "../../utils/fetch.functions";
 import { IUser } from "../../interfaces/user.interface";
 
 function UsersList() {
-  const [users, setUsers] = useState<IUser[]>([]);
-  const [loading, setLoading] = useState<boolean>(true);
-  const [error, setError] = useState<string | null>(null);
+  const [users, setUsers] = useState([] as IUser[]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null); //
 
   useEffect(() => {
     const getUsers = async () => {
@@ -31,13 +31,13 @@ function UsersList() {
   }
 
   return (
-    <div>
-      <h1>Users</h1>
-      <ul>
-        {users.map((user) => (
-          <li key={user.id}>{user.login}</li>
-        ))}
-      </ul>
+    <div className="userCard">
+      {users.map((user) => (
+        <div key={user.id}>
+          <img src={user.avatar_url} />
+          <div>{user.login}</div>
+        </div>
+      ))}
     </div>
   );
 }
