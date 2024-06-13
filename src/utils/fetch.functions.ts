@@ -23,7 +23,7 @@ export async function fetchUserProfile(username: string) {
     const profile: IUser = await response.json();
     return profile;
   } catch (error) {
-    console.error("Error fetching repositories:", error);
+    console.error("Error fetching profiles:", error);
     throw error;
   }
 }

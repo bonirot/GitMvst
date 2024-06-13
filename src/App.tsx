@@ -1,13 +1,12 @@
 import "./App.css";
-import { Header } from "./components/Header";
-import UsersList from "./components/UsersList";
+import { BrowserRouter } from "react-router-dom";
+import AppRoutes from "./routes/approutes";
 
 function App() {
   return (
-    <>
-      <Header />
-      <UsersList />
-    </>
+    <BrowserRouter>
+      <AppRoutes />
+    </BrowserRouter>
   );
 }
 

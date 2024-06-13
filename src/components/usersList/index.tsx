@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { fetchUsers } from "../../utils/fetch.functions";
 import { IUser } from "../../interfaces/user.interface";
+import { Link } from "react-router-dom";
 
 function UsersList() {
   const [users, setUsers] = useState([] as IUser[]);
@@ -34,7 +35,9 @@ function UsersList() {
     <div className="userCard">
       {users.map((user) => (
         <div key={user.id}>
-          <img src={user.avatar_url} />
+          <Link to="/${}">
+            <img src={user.avatar_url} />
+          </Link>
           <div>{user.login}</div>
         </div>
       ))}
