@@ -1,5 +1,6 @@
 .userContainer {
-  margin-top: 6.5rem;
+  margin-top: 9rem;
+  margin-bottom: 3rem;
   /* border: 2px solid red; */
   display: flex;
   flex-wrap: wrap;
@@ -14,12 +15,13 @@
   align-items: center;
   flex-direction: column;
   border: 1px solid green;
-  width: 15rem;
-  height: 15rem;
+  width: 17rem;
+  height: 17rem;
+  padding: 1rem;
 }
 
 .userContainer_card-avatar {
-  width: 8rem;
+  width: 12rem;
   margin-bottom: 1rem;
   border-radius: 0.4rem;
   transition: all 0.2s ease;
@@ -46,7 +48,7 @@
 }
 
 .userContainer_card-username:hover {
-  background-image: linear-gradient(144deg, #5b42f3, #ec40ff);
+  background-image: linear-gradient(144deg, var(--primary), var(--secondary));
 }
 
 .userContainer_card-username:active {

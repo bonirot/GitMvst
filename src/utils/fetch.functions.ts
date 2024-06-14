@@ -1,5 +1,5 @@
+import { IProfile } from "../interfaces/profile.interface";
 import { IRepository } from "../interfaces/repo.interface";
-import { IUser } from "../interfaces/user.interface";
 
 const { VITE_BASE_URL } = import.meta.env;
 
@@ -20,7 +20,7 @@ export async function fetchUsers() {
 export async function fetchUserProfile(username: string) {
   try {
     const response = await fetch(`${VITE_BASE_URL}/users/${username}`);
-    const profile: IUser = await response.json();
+    const profile: IProfile = await response.json();
     return profile;
   } catch (error) {
     console.error("Error fetching profiles:", error);

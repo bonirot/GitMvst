@@ -9,7 +9,7 @@ export function Header() {
           <IoMenu color="white" size="2.5rem" />
         </button>
         <img className="header-logo" src="/terminal_logo.png" />
-        <h1 className="header-title">GitMvst!</h1>
+        <h1 className="header-title">GitMvst</h1>
       </header>
     </>
   );

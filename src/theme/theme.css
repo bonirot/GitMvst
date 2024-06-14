@@ -1,8 +1,9 @@
 :root {
-  --primary: #e7c929;
+  --primary: #5b42f3;
   --primaryOpacity: rgba(196, 172, 38, 0.97);
   --primaryActive: #d1b92e99;
   --black: #252525;
+  --secondary: #ec40ff;
   --gray-primary: #353434;
   --gray-secondary: #acacac;
   --gray-tertiary: #a2a2a2;

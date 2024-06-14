@@ -1,5 +1,5 @@
-import { Header } from "../../components/Header";
-import UsersList from "../../components/UsersList";
+import { Header } from "../../components/header";
+import UsersList from "../../components/usersList";
 
 function Home() {
   return (
