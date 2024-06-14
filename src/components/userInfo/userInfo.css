@@ -1,0 +1,37 @@
+.userInfoContainer {
+  width: 25rem;
+  padding: 2rem;
+  background-color: var(--tertiary);
+  border-radius: 2rem;
+}
+
+.userInfoContainer_avatar {
+  width: 25rem;
+  border-radius: 2rem;
+}
+
+.userInfoContainer_text,
+.userInfoContainer_text-user,
+.userInfoContainer_text-bio,
+.userInfoContainer_text-location {
+  width: 100%;
+  font-size: 2rem;
+  text-align: left;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.userInfoContainer_text-bio {
+  font-size: 1.7rem;
+  /* text-align: justify; */
+}
+
+.userInfoContainer_text-location {
+  font-size: 1.7rem;
+  text-align: left;
+  color: #b7b7b7;
+}
+
+.react-icons {
+  margin-right: 1rem;
+}

@@ -1,7 +1,6 @@
 .userContainer {
   margin-top: 9rem;
   margin-bottom: 3rem;
-  /* border: 2px solid red; */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -12,18 +11,21 @@
 .userContainer_card {
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-direction: column;
   border: 1px solid green;
   width: 17rem;
   height: 17rem;
   padding: 1rem;
 }
-
+.userContainer_card-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
 .userContainer_card-avatar {
   width: 12rem;
   margin-bottom: 1rem;
-  border-radius: 0.4rem;
+  border-radius: 3rem;
   transition: all 0.2s ease;
 }
 

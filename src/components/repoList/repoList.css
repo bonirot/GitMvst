@@ -1,0 +1,6 @@
+.repositoryContainer {
+  width: 65rem;
+  padding: 2rem;
+  background-color: var(--tertiary);
+  border-radius: 2rem;
+}

@@ -4,9 +4,35 @@
   --primaryActive: #d1b92e99;
   --black: #252525;
   --secondary: #ec40ff;
+  --tertiary: #191322;
+  --background: #211937;
   --gray-primary: #353434;
   --gray-secondary: #acacac;
   --gray-tertiary: #a2a2a2;
   --white: #ffffff;
   --red: #ba2929;
+}
+
+/* Personalización de la barra de desplazamiento para navegadores basados en WebKit */
+::-webkit-scrollbar {
+  width: 12px; /* Ancho de la barra de desplazamiento vertical */
+  height: 12px; /* Altura de la barra de desplazamiento horizontal */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Color de fondo de la pista de la barra de desplazamiento */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888; /* Color de la manija de la barra de desplazamiento */
+  border-radius: 10px; /* Bordes redondeados de la manija */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Color de la manija de la barra de desplazamiento al pasar el cursor */
+}
+
+/* Opcional: personalizar la esquina de la barra de desplazamiento en la intersección de las barras horizontal y vertical */
+::-webkit-scrollbar-corner {
+  background: #f1f1f1; /* Color de fondo de la esquina de la barra de desplazamiento */
 }

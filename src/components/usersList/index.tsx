@@ -4,7 +4,7 @@ import { IUser } from "../../interfaces/user.interface";
 import { Link } from "react-router-dom";
 import "./usersList.css";
 
-function UsersList() {
+export function UsersList() {
   const [users, setUsers] = useState([] as IUser[]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null); //
@@ -36,14 +36,12 @@ function UsersList() {
     <div className="userContainer">
       {users.map((user) => (
         <div key={user.id} className="userContainer_card">
-          <Link to={`/user/${user.login}`}>
+          <Link className="userContainer_card-link" to={`/user/${user.login}`}>
             <img className="userContainer_card-avatar" src={user.avatar_url} />
+            <p className="userContainer_card-username">{user.login}</p>
           </Link>
-          <p className="userContainer_card-username">{user.login}</p>
         </div>
       ))}
     </div>
   );
 }
-
-export default UsersList;
