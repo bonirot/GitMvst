@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { fetchUsers } from "../../utils/fetch.functions";
 import { IUser } from "../../interfaces/user.interface";
 import { Link } from "react-router-dom";
+import "./usersList.css";
 
 function UsersList() {
   const [users, setUsers] = useState([] as IUser[]);
@@ -32,13 +33,13 @@ function UsersList() {
   }
 
   return (
-    <div className="userCard">
+    <div className="userContainer">
       {users.map((user) => (
-        <div key={user.id}>
-          <Link to="/${}">
-            <img src={user.avatar_url} />
+        <div key={user.id} className="userContainer_card">
+          <Link to="/">
+            <img className="userContainer_card-avatar" src={user.avatar_url} />
           </Link>
-          <div>{user.login}</div>
+          <p className="userContainer_card-username">{user.login}</p>
         </div>
       ))}
     </div>

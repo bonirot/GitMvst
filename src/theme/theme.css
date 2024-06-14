@@ -1,0 +1,11 @@
+:root {
+  --primary: #e7c929;
+  --primaryOpacity: rgba(196, 172, 38, 0.97);
+  --primaryActive: #d1b92e99;
+  --black: #252525;
+  --gray-primary: #353434;
+  --gray-secondary: #acacac;
+  --gray-tertiary: #a2a2a2;
+  --white: #ffffff;
+  --red: #ba2929;
+}

@@ -1,0 +1,54 @@
+.userContainer {
+  margin-top: 6.5rem;
+  /* border: 2px solid red; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.userContainer_card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid green;
+  width: 15rem;
+  height: 15rem;
+}
+
+.userContainer_card-avatar {
+  width: 8rem;
+  margin-bottom: 1rem;
+  border-radius: 0.4rem;
+  transition: all 0.2s ease;
+}
+
+.userContainer_card-avatar:active {
+  transform: scale(0.96);
+}
+
+.userContainer_card-username {
+  border: 0.08rem solid rgb(149, 149, 149);
+  border-radius: 0.3rem;
+  padding: 0.2rem;
+  background: none;
+  width: 8rem;
+  text-align: center;
+
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  transition: all 0.3s;
+}
+
+.userContainer_card-username:hover {
+  background-image: linear-gradient(144deg, #5b42f3, #ec40ff);
+}
+
+.userContainer_card-username:active {
+  transform: scale(0.9);
+}
