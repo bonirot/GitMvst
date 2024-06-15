@@ -5,6 +5,7 @@ import { fetchUserProfile } from "../../utils/fetch.functions";
 import { IProfile } from "../../interfaces/profile.interface";
 import { MdOutlinePlace } from "react-icons/md";
 import { FaRegUser } from "react-icons/fa";
+import { GoPeople } from "react-icons/go";
 
 export function UserInfo() {
   const { username } = useParams<{ username: string }>();
@@ -56,13 +57,19 @@ export function UserInfo() {
       <div className="userInfoContainer-text">
         <p className="userInfoContainer_text-user">
           <FaRegUser className="react-icons" />
-
           {user.login}
         </p>
         {user.bio && <p className="userInfoContainer_text-bio">{user.bio}</p>}
+        <button className="userInfoContainer_text-followBtn">Follow</button>
+        {user.followers && (
+          <p className="userInfoContainer_text-follow">
+            <GoPeople className="react-icons" />
+            {user.followers} followers {user.following} following
+          </p>
+        )}
         {user.location && (
           <p className="userInfoContainer_text-location">
-            <MdOutlinePlace size="2rem" className="react-icons" />
+            <MdOutlinePlace className="react-icons" />
             {user.location}
           </p>
         )}

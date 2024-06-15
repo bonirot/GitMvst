@@ -1,12 +1,12 @@
 .userInfoContainer {
-  width: 25rem;
+  width: 30rem;
   padding: 2rem;
   background-color: var(--tertiary);
   border-radius: 2rem;
 }
 
 .userInfoContainer_avatar {
-  width: 25rem;
+  width: 15rem;
   border-radius: 2rem;
 }
 
@@ -15,23 +15,37 @@
 .userInfoContainer_text-bio,
 .userInfoContainer_text-location {
   width: 100%;
-  font-size: 2rem;
+  font-size: 1.7rem;
   text-align: left;
   padding-top: 1rem;
-  padding-bottom: 1rem;
+  /* padding-bottom: 1rem; */
 }
 
 .userInfoContainer_text-bio {
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   /* text-align: justify; */
 }
+.userInfoContainer_text-followBtn {
+  background-color: var(--primary);
+  width: 20rem;
+  border: 0.1rem solid white;
+  border-radius: 1rem;
+  padding: 0.6rem;
+  margin: 1rem;
+  color: white;
+}
 
+.userInfoContainer_text-followBtn:hover {
+  background-color: var(--tertiary);
+}
+
+.userInfoContainer_text-follow,
 .userInfoContainer_text-location {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   text-align: left;
   color: #b7b7b7;
 }
 
 .react-icons {
-  margin-right: 1rem;
+  margin-right: 0.6rem;
 }

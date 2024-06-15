@@ -1,7 +1,7 @@
 .profilePageContainer {
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: row;
   border: 2px solid red;
   margin-top: 10rem;

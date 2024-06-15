@@ -1,11 +1,11 @@
 import { IProfile } from "../interfaces/profile.interface";
 import { IRepository } from "../interfaces/repo.interface";
 
-const { VITE_BASE_URL } = import.meta.env;
+const url = "https://api.github.com";
 
 export async function fetchUsers() {
   try {
-    const response = await fetch(`${VITE_BASE_URL}/users`);
+    const response = await fetch(`${url}/users`);
     // if (!response.ok) {
     //   throw new Error("Network response was not ok");
     // }
@@ -19,7 +19,7 @@ export async function fetchUsers() {
 
 export async function fetchUserProfile(username: string) {
   try {
-    const response = await fetch(`${VITE_BASE_URL}/users/${username}`);
+    const response = await fetch(`${url}/users/${username}`);
     const profile: IProfile = await response.json();
     return profile;
   } catch (error) {
@@ -30,7 +30,7 @@ export async function fetchUserProfile(username: string) {
 
 export async function fetchRepos(username: string) {
   try {
-    const response = await fetch(`${VITE_BASE_URL}/users/${username}/repos`);
+    const response = await fetch(`${url}/users/${username}/repos`);
     const repos: IRepository[] = await response.json();
     return repos;
   } catch (error) {

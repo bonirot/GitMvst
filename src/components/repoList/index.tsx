@@ -3,6 +3,9 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { fetchRepos } from "../../utils/fetch.functions";
 import { IRepository } from "../../interfaces/repo.interface";
+import { FiBookOpen } from "react-icons/fi";
+import { LuBookMarked } from "react-icons/lu";
+import { GoProject } from "react-icons/go";
 
 export function RepoList() {
   const { username } = useParams<{ username: string }>();
@@ -46,15 +49,29 @@ export function RepoList() {
 
   return (
     <div className="repositoryContainer">
-      <h1>Repositories</h1>
-      <div className="repositoryContainer_card">
-        {repo.map((r) => (
-          <div key={r.id}>
-            <p>Name: {r.name}</p>
-            <p>Description: {r.description}</p>
-          </div>
-        ))}
-      </div>
+      <nav className="repositoryContainer_navbar">
+        <p className="repositoryContainer_navbar-link">
+          <FiBookOpen size="1.7rem" className="repositoryIcons" />
+          Overview
+        </p>
+        <p className="repositoryContainer_navbar-link active">
+          <LuBookMarked size="1.7rem" className="repositoryIcons" />
+          Repositories
+        </p>
+        <p className="repositoryContainer_navbar-link">
+          <GoProject size="1.7rem" className="repositoryIcons" />
+          Projects
+        </p>
+      </nav>
+      {/* AQUÍ VA LA SEARCHBAR */}
+      {repo.map((r) => (
+        <div key={r.id} className="repositoryContainer_card">
+          <p className="repositoryContainer_card-name">{r.name}</p>
+          <p className="repositoryContainer_card-description">
+            {r.description}
+          </p>
+        </div>
+      ))}
     </div>
   );
 }
