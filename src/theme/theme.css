@@ -1,15 +1,13 @@
 :root {
-  --primary: #5b42f3;
-  --primaryOpacity: rgba(196, 172, 38, 0.97);
-  --primaryActive: #d1b92e99;
-  --black: #252525;
-  --secondary: #ec40ff;
-  --tertiary: #151515;
-  --cuatertiary: #191322;
+  --first: #5b42f3;
+  --second: #ec40ff;
+  --third: #151515;
+  --fourth: #191322;
   --background: #211937;
   --gray-primary: #353434;
   --gray-secondary: #acacac;
   --gray-tertiary: #a2a2a2;
+  --black: #252525;
   --white: #ffffff;
   --red: #ba2929;
 }

@@ -1,7 +1,7 @@
 .userInfoContainer {
-  width: 30rem;
+  width: 20%;
   padding: 2rem;
-  background-color: var(--tertiary);
+  background-color: var(--third);
   border-radius: 2rem;
 }
 
@@ -10,23 +10,37 @@
   border-radius: 2rem;
 }
 
+.userInfoContainer_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .userInfoContainer_text,
+.userInfoContainer_text-name,
 .userInfoContainer_text-user,
 .userInfoContainer_text-bio,
-.userInfoContainer_text-location {
+.userInfoContainer_text-location,
+.userInfoContainer_text-follow {
   width: 100%;
   font-size: 1.7rem;
   text-align: left;
   padding-top: 1rem;
-  /* padding-bottom: 1rem; */
+}
+
+.userInfoContainer_text-name {
+  font-weight: 800;
 }
 
 .userInfoContainer_text-bio {
   font-size: 1.6rem;
-  /* text-align: justify; */
 }
+
+/* FOLLOW BUTTON STYLES */
+
 .userInfoContainer_text-followBtn {
-  background-color: var(--primary);
+  background-color: var(--first);
   width: 20rem;
   border: 0.1rem solid white;
   border-radius: 1rem;
@@ -35,10 +49,7 @@
   color: white;
 }
 
-.userInfoContainer_text-followBtn:hover {
-  background-color: var(--tertiary);
-}
-
+.userInfoContainer_text-user,
 .userInfoContainer_text-follow,
 .userInfoContainer_text-location {
   font-size: 1.5rem;
@@ -48,4 +59,60 @@
 
 .react-icons {
   margin-right: 0.6rem;
+}
+
+.userInfoContainer_text-followBtn {
+  --color: #5b42f3;
+  --color2: #ffffff;
+  padding: 0.8em 1.75em;
+  background-color: transparent;
+  border-radius: 6px;
+  border: 0.3px solid var(--color);
+  transition: 0.5s;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 1;
+  font-weight: 300;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  color: var(--color);
+}
+
+.userInfoContainer_text-followBtn::after,
+.userInfoContainer_text-followBtn::before {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  transform: skew(90deg) translate(-50%, -50%);
+  position: absolute;
+  inset: 50%;
+  left: 25%;
+  z-index: -1;
+  transition: 0.5s ease-out;
+  background-color: var(--color);
+}
+
+.userInfoContainer_text-followBtn::before {
+  top: -50%;
+  left: -25%;
+  transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+}
+
+.userInfoContainer_text-followBtn:hover::before {
+  transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
+}
+
+.userInfoContainer_text-followBtn:hover::after {
+  transform: skew(45deg) translate(-50%, -50%);
+}
+
+.userInfoContainer_text-followBtn:hover {
+  color: var(--color2);
+}
+
+.userInfoContainer_text-followBtn:active {
+  filter: brightness(0.7);
+  transform: scale(0.98);
 }

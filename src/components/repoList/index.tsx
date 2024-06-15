@@ -7,7 +7,7 @@ import { FiBookOpen } from "react-icons/fi";
 import { LuBookMarked } from "react-icons/lu";
 import { GoProject } from "react-icons/go";
 
-export function RepoList() {
+function RepoList() {
   const { username } = useParams<{ username: string }>();
   const [repo, setRepo] = useState<IRepository[]>([]);
   const [loading, setLoading] = useState(true);
@@ -75,3 +75,5 @@ export function RepoList() {
     </div>
   );
 }
+
+export default RepoList;

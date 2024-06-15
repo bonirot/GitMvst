@@ -2,7 +2,7 @@ import { Routes, Route, Navigate } from "react-router-dom";
 import Home from "../pages/home";
 import Profile from "../pages/profile";
 
-const AppRoutes = () => {
+function AppRoutes() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
@@ -10,6 +10,6 @@ const AppRoutes = () => {
       <Route path="*" element={<Navigate to="/welcome" />} />
     </Routes>
   );
-};
+}
 
 export default AppRoutes;

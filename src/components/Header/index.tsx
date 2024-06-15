@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import "./header.css";
 import { IoMenu } from "react-icons/io5";
 
-export function Header() {
+function Header() {
   return (
     <>
       <header className="header">
@@ -17,3 +17,5 @@ export function Header() {
     </>
   );
 }
+
+export default Header;

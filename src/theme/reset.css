@@ -3,7 +3,7 @@
 html {
   font-family: "Inter", sans-serif;
   font-size: 62.5%;
-  background: var(--background);
+  background-image: linear-gradient(to bottom right, #180d48, #9756f2);
 }
 
 body,

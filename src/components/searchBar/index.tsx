@@ -1,5 +1,5 @@
-import { ChangeEvent, useEffect, useState } from "react";
 import "./searchBar.css";
+import { ChangeEvent, useEffect, useState } from "react";
 import { IUser } from "../../interfaces/user.interface";
 
 type Props = {
@@ -7,16 +7,8 @@ type Props = {
   onSearch: (results: IUser[]) => void;
 };
 
-export default function SearchBar({ users, onSearch }: Props) {
+function SearchBar({ users, onSearch }: Props) {
   const [searched, setSearched] = useState("");
-
-  useEffect(() => {
-    search(searched);
-  }, [searched, users]);
-
-  const handleChange = (ev: ChangeEvent<HTMLInputElement>) => {
-    setSearched(ev.target.value);
-  };
 
   const search = (query: string) => {
     if (!query) {
@@ -31,6 +23,14 @@ export default function SearchBar({ users, onSearch }: Props) {
     onSearch(filteredUsers);
   };
 
+  useEffect(() => {
+    search(searched);
+  }, [searched, users]);
+
+  const handleChange = (ev: ChangeEvent<HTMLInputElement>) => {
+    setSearched(ev.target.value);
+  };
+
   return (
     <input
       type="search"
@@ -41,3 +41,5 @@ export default function SearchBar({ users, onSearch }: Props) {
     />
   );
 }
+
+export default SearchBar;

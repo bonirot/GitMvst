@@ -1,12 +1,12 @@
-import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 import "./home.css";
+import { useState, useEffect } from "react";
 import { IUser } from "../../interfaces/user.interface";
+import { Link } from "react-router-dom";
 import { fetchUsers } from "../../utils/fetch.functions";
 import SearchBar from "../../components/searchBar";
-import { Header } from "../../components/header";
+import Header from "../../components/header";
 
-const Home = () => {
+function Home() {
   const [users, setUsers] = useState<IUser[]>([]);
   const [filteredUsers, setFilteredUsers] = useState<IUser[]>([]);
   const [loading, setLoading] = useState(true);
@@ -56,7 +56,9 @@ const Home = () => {
                   className="userContainer_card-avatar"
                   src={user.avatar_url}
                 />
-                <p className="userContainer_card-username">{user.login}</p>
+                <button className="userContainer_card-username">
+                  {user.login}
+                </button>
               </Link>
             </div>
           ))}
@@ -64,6 +66,6 @@ const Home = () => {
       </div>
     </>
   );
-};
+}
 
 export default Home;

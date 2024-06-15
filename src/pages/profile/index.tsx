@@ -1,7 +1,7 @@
 import "./profile.css";
-import { Header } from "../../components/header";
-import { RepoList } from "../../components/repoList";
-import { UserInfo } from "../../components/userInfo";
+import Header from "../../components/header";
+import UserInfo from "../../components/userInfo";
+import RepoList from "../../components/repoList";
 
 function Profile() {
   return (

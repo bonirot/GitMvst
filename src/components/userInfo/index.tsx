@@ -7,7 +7,7 @@ import { MdOutlinePlace } from "react-icons/md";
 import { FaRegUser } from "react-icons/fa";
 import { GoPeople } from "react-icons/go";
 
-export function UserInfo() {
+function UserInfo() {
   const { username } = useParams<{ username: string }>();
   const [user, setUser] = useState<IProfile | null>(null);
   const [loading, setLoading] = useState(true);
@@ -54,7 +54,8 @@ export function UserInfo() {
         src={user.avatar_url}
         alt={user.login}
       />
-      <div className="userInfoContainer-text">
+      <div className="userInfoContainer_text">
+        <p className="userInfoContainer_text-name">{user.name}</p>
         <p className="userInfoContainer_text-user">
           <FaRegUser className="react-icons" />
           {user.login}
@@ -77,3 +78,4 @@ export function UserInfo() {
     </div>
   );
 }
+export default UserInfo;
