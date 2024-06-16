@@ -8,6 +8,56 @@
 }
 
 .repositoryContainer {
-  width: 65%;
+  width: 60%;
+  padding: 2rem;
   background-color: var(--third);
+  border-radius: 2rem;
+  margin-bottom: 3rem;
+}
+
+.repositoryContainer_navbar {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  /* padding: 1rem 2rem; */
+  /* background-color: #b3b3b3; */
+  color: white;
+  border-bottom: 0.03rem solid var(--first);
+}
+
+.repositoryContainer_navbar-link {
+  padding: 1rem 2rem;
+  font-size: 1.3rem;
+  font-weight: 800;
+  display: flex;
+}
+
+.repositoryContainer_navbar-link:hover {
+  color: var(--first);
+  cursor: pointer;
+}
+
+.active {
+  color: var(--first);
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+.repositoryIcons {
+  padding-right: 0.5rem;
+}
+.repositoryContainer_card {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  border-bottom: 0.03rem solid #342857;
+  text-align: left;
+}
+
+.repositoryContainer_card-name {
+  font-size: 2rem;
+}
+
+.repositoryContainer_card-description {
+  color: #b3b3b3;
+  font-size: 1.4rem;
 }
