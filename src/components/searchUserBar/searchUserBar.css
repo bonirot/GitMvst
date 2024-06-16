@@ -1,0 +1,9 @@
+.searchUserBar {
+  width: 35rem;
+  padding: 0.8rem;
+  margin-top: 2rem;
+  border: 0.1rem solid white;
+  border-radius: 0.5rem;
+  background: none;
+  color: white;
+}

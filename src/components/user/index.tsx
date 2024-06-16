@@ -1,4 +1,4 @@
-import "./users.css";
+import "./user.css";
 import { Link } from "react-router-dom";
 
 type Props = {
@@ -7,7 +7,7 @@ type Props = {
   avatar_url: string;
 };
 
-function Users(u: Props) {
+function User(u: Props) {
   return (
     <div key={u.id} className="userContainer_card">
       <Link className="userContainer_card-link" to={`/user/${u.login}`}>
@@ -17,4 +17,4 @@ function Users(u: Props) {
     </div>
   );
 }
-export default Users;
+export default User;

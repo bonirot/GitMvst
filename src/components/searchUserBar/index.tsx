@@ -1,4 +1,4 @@
-import "./searchBar.css";
+import "./searchUserBar.css";
 import { ChangeEvent, useEffect, useState } from "react";
 import { IUser } from "../../interfaces/user.interface";
 
@@ -7,7 +7,7 @@ type Props = {
   onSearch: (results: IUser[]) => void;
 };
 
-function SearchBar({ users, onSearch }: Props) {
+function SearchUser({ users, onSearch }: Props) {
   const [searched, setSearched] = useState("");
 
   const search = (query: string) => {
@@ -34,7 +34,7 @@ function SearchBar({ users, onSearch }: Props) {
   return (
     <input
       type="search"
-      className="searchBar"
+      className="searchUserBar"
       placeholder="Search"
       value={searched}
       onChange={handleChange}
@@ -42,4 +42,4 @@ function SearchBar({ users, onSearch }: Props) {
   );
 }
 
-export default SearchBar;
+export default SearchUser;

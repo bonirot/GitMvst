@@ -1,0 +1,15 @@
+.repositoryContainer_card {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  border-bottom: 0.03rem solid #342857;
+  text-align: left;
+}
+
+.repositoryContainer_card-name {
+  font-size: 2rem;
+}
+
+.repositoryContainer_card-description {
+  color: #b3b3b3;
+  font-size: 1.4rem;
+}

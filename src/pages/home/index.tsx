@@ -2,15 +2,15 @@ import "./home.css";
 import { useState, useEffect } from "react";
 import { IUser } from "../../interfaces/user.interface";
 import { fetchUsers } from "../../utils/fetch.functions";
-import SearchBar from "../../components/searchBar";
 import Header from "../../components/header";
-import Users from "../../components/users";
+import User from "../../components/user";
+import SearchUser from "../../components/searchUserBar";
 
 function Home() {
-  const [users, setUsers] = useState<IUser[]>([]);
-  const [filteredUsers, setFilteredUsers] = useState<IUser[]>([]);
+  const [users, setUsers] = useState([] as IUser[]);
+  const [filteredUsers, setFilteredUsers] = useState([] as IUser[]);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
+  const [error, setError] = useState(null as string | null);
 
   useEffect(() => {
     const getUsers = async () => {
@@ -44,10 +44,10 @@ function Home() {
     <>
       <Header />
       <div className="searchUserContainer">
-        <SearchBar users={users} onSearch={handleSearchResults} />
+        <SearchUser users={users} onSearch={handleSearchResults} />
         <div className="userContainer">
           {filteredUsers.map((user) => (
-            <Users
+            <User
               key={user.id}
               id={user.id}
               login={user.login}

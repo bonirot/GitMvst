@@ -9,9 +9,9 @@ import { GoPeople } from "react-icons/go";
 
 function UserInfo() {
   const { username } = useParams<{ username: string }>();
-  const [user, setUser] = useState<IProfile | null>(null);
+  const [user, setUser] = useState(null as IProfile | null);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
+  const [error, setError] = useState(null as string | null);
 
   useEffect(() => {
     const getUser = async () => {

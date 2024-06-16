@@ -28,7 +28,7 @@ export async function fetchUserProfile(username: string) {
   }
 }
 
-export async function fetchRepos(username: string) {
+export async function fetchRepos(username: string | undefined) {
   try {
     const response = await fetch(`${url}/users/${username}/repos`);
     const repos: IRepository[] = await response.json();

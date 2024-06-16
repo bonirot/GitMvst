@@ -1,10 +1,13 @@
 .userContainer_card {
   display: flex;
   justify-content: center;
-  border: 1px solid green;
+  /* border: 1px solid green; */
+  background: var(--third);
+  border-radius: 1.5rem;
   width: 15rem;
   height: 15rem;
   padding: 3rem;
+  margin: 0.8rem;
 }
 .userContainer_card-link {
   display: flex;
