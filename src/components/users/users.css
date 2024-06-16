@@ -1,0 +1,127 @@
+.userContainer_card {
+  display: flex;
+  justify-content: center;
+  border: 1px solid green;
+  width: 15rem;
+  height: 15rem;
+  padding: 3rem;
+}
+.userContainer_card-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.userContainer_card-avatar {
+  width: 13rem;
+  margin-bottom: 1rem;
+  border-radius: 1.5rem;
+  transition: all 0.2s ease;
+}
+
+.userContainer_card-avatar:active {
+  transform: scale(0.96);
+}
+
+.userContainer_card-username {
+  font-size: 1.5rem;
+  border: 0.08rem solid rgb(149, 149, 149);
+  border-radius: 0.5rem;
+  padding: 0.7rem;
+  background: none;
+  width: 10rem;
+  text-align: center;
+
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  transition: all 0.3s;
+}
+
+/* BUTTON STYLE */
+
+.userContainer_card-username {
+  background-color: var(--first);
+  width: 15rem;
+  border: 0.1rem solid white;
+  border-radius: 1rem;
+  padding: 0.6rem;
+  margin: 1rem;
+  color: white;
+}
+/* 
+  .userContainer_card-username:hover {
+    background-color: var(--);
+  } */
+.userInfoContainer_text-user,
+.userInfoContainer_text-follow,
+.userInfoContainer_text-location {
+  font-size: 1.5rem;
+  text-align: left;
+  color: #b7b7b7;
+}
+
+.react-icons {
+  margin-right: 0.6rem;
+}
+
+/* BUTTON */
+
+.userContainer_card-username {
+  --color: #ffffff;
+  --color2: #000000;
+  padding: 2rem;
+  padding-top: 0.5rem;
+  background-color: transparent;
+  border-radius: 6px;
+  border: 0.3px solid var(--color);
+  transition: 0.5s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  font-weight: 300;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--color);
+}
+
+.userContainer_card-username::after,
+.userContainer_card-username::before {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  transform: skew(90deg) translate(-50%, -50%);
+  position: absolute;
+  inset: 50%;
+  left: 25%;
+  z-index: -1;
+  transition: 0.5s ease-out;
+  background-color: var(--color);
+}
+
+.userContainer_card-username::before {
+  top: -50%;
+  left: -25%;
+  transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+}
+
+.userContainer_card-username:hover::before {
+  transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
+}
+
+.userContainer_card-username:hover::after {
+  transform: skew(45deg) translate(-50%, -50%);
+}
+
+.userContainer_card-username:hover {
+  color: var(--color2);
+}
+
+.userContainer_card-username:active {
+  filter: brightness(0.7);
+  transform: scale(0.98);
+}

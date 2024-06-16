@@ -1,10 +1,10 @@
 import "./home.css";
 import { useState, useEffect } from "react";
 import { IUser } from "../../interfaces/user.interface";
-import { Link } from "react-router-dom";
 import { fetchUsers } from "../../utils/fetch.functions";
 import SearchBar from "../../components/searchBar";
 import Header from "../../components/header";
+import Users from "../../components/users";
 
 function Home() {
   const [users, setUsers] = useState<IUser[]>([]);
@@ -47,20 +47,12 @@ function Home() {
         <SearchBar users={users} onSearch={handleSearchResults} />
         <div className="userContainer">
           {filteredUsers.map((user) => (
-            <div key={user.id} className="userContainer_card">
-              <Link
-                className="userContainer_card-link"
-                to={`/user/${user.login}`}
-              >
-                <img
-                  className="userContainer_card-avatar"
-                  src={user.avatar_url}
-                />
-                <button className="userContainer_card-username">
-                  {user.login}
-                </button>
-              </Link>
-            </div>
+            <Users
+              key={user.id}
+              id={user.id}
+              login={user.login}
+              avatar_url={user.avatar_url}
+            />
           ))}
         </div>
       </div>

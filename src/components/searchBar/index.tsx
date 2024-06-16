@@ -34,7 +34,7 @@ function SearchBar({ users, onSearch }: Props) {
   return (
     <input
       type="search"
-      className="search"
+      className="searchBar"
       placeholder="Search"
       value={searched}
       onChange={handleChange}
