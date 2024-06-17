@@ -2,7 +2,7 @@ import "./home.css";
 import { useState, useEffect } from "react";
 import { IUser } from "../../interfaces/user.interface";
 import { fetchUsers } from "../../utils/fetch.functions";
-import Header from "../../components/header";
+import Header from "../../components/Header";
 import User from "../../components/user";
 import SearchUser from "../../components/searchUserBar";
 import "react-loading-skeleton/dist/skeleton.css";

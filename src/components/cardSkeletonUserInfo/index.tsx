@@ -1,4 +1,4 @@
-import Header from "../header";
+import Header from "../Header";
 import "./cardSkeletonUserInfo.css";
 import Skeleton from "react-loading-skeleton";
 
