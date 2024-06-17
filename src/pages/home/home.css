@@ -12,3 +12,9 @@
   align-items: center;
   width: 100%;
 }
+
+.loading-skeleton {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10rem;
+}
