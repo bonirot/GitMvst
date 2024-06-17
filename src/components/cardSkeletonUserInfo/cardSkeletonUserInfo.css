@@ -1,0 +1,24 @@
+.card-skeleton {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background: var(--third);
+  border-radius: 1.5rem;
+  width: 15rem;
+  height: 15rem;
+  padding: 3rem;
+  margin: 10rem;
+}
+
+.card-skeleton_user {
+  margin: 0.5rem;
+}
+.card-skeleton_name {
+  flex: 1;
+}
+
+.loading-skeleton {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10rem;
+}

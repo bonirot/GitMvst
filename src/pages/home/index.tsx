@@ -5,6 +5,8 @@ import { fetchUsers } from "../../utils/fetch.functions";
 import Header from "../../components/header";
 import User from "../../components/user";
 import SearchUser from "../../components/searchUserBar";
+import "react-loading-skeleton/dist/skeleton.css";
+import CardSkeletonUser from "../../components/cardSkeletonUser";
 
 function Home() {
   const [users, setUsers] = useState([] as IUser[]);
@@ -33,7 +35,7 @@ function Home() {
   };
 
   if (loading) {
-    return <div>Loading...</div>;
+    return <CardSkeletonUser />;
   }
 
   if (error) {
