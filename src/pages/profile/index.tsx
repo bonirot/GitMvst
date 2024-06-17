@@ -10,6 +10,7 @@ import { LuBookMarked } from "react-icons/lu";
 import { GoProject } from "react-icons/go";
 import SearchRepo from "../../components/searchRepoBar";
 import CardSkeletonUserInfo from "../../components/cardSkeletonUserInfo";
+import Header from "../../components/header";
 
 function Profile() {
   const { username } = useParams<{ username: string | undefined }>();

@@ -10,8 +10,8 @@ function CardSkeletonUser() {
         {Array(8)
           .fill(0)
           .map((_, index) => (
-            <div className="card-skeleton">
-              <div key={index} className="card-skeleton_user">
+            <div key={index} className="card-skeleton">
+              <div className="card-skeleton_user">
                 <div className="card-skeleton_user">
                   <Skeleton borderRadius={20} width={120} height={120} />
                 </div>
