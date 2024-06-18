@@ -1,7 +1,7 @@
 import { it, expect, describe } from "vitest";
 import { render, screen } from "@testing-library/react";
-import Header from "/Users/julia/Documents/AIT/git/workspace/GitMvst/src/components/Header/index.tsx";
 import React from "react";
+import Header from "../../src/components/Header";
 import { BrowserRouter } from "react-router-dom";
 
 describe("Header", () => {
