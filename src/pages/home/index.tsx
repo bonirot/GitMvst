@@ -3,10 +3,10 @@ import { useState, useEffect } from "react";
 import { IUser } from "../../interfaces/user.interface";
 import { fetchUsers } from "../../utils/fetch.functions";
 import "react-loading-skeleton/dist/skeleton.css";
-import CardSkeletonUser from "../../components/CardSkeletonUser/index";
 import Header from "../../components/Header";
-import SearchUserBar from "../../components/SearchUserBar";
-import User from "../../components/User";
+import SearchUserBar from "../../components/searchUserBar";
+import User from "../../components/user";
+import CardSkeletonUser from "../../components/cardSkeletonUser";
 
 function Home() {
   const [users, setUsers] = useState([] as IUser[]);

@@ -6,11 +6,11 @@ import { useParams } from "react-router-dom";
 import { FiBookOpen } from "react-icons/fi";
 import { LuBookMarked } from "react-icons/lu";
 import { GoProject } from "react-icons/go";
-import SearchRepoBar from "../../components/SearchRepoBar";
+import SearchRepoBar from "../../components/searchRepoBar";
 import CardSkeletonProfile from "../../components/CardSkeletonProfile";
 import Header from "../../components/Header";
-import UserInfo from "../../components/UserInfo";
-import Repo from "../../components/Repository";
+import UserInfo from "../../components/userInfo";
+import Repo from "../../components/repository";
 
 function Profile() {
   const { username } = useParams<{ username: string | undefined }>();
