@@ -7,7 +7,7 @@ function CardSkeletonUser() {
     <>
       <Header />
       <div className="loading-skeleton">
-        {Array(8)
+        {Array(10)
           .fill(0)
           .map((_, index) => (
             <div key={index} className="card-skeleton">
