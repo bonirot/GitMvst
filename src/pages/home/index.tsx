@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { IUser } from "../../interfaces/user.interface";
 import { fetchUsers } from "../../utils/fetch.functions";
 import "react-loading-skeleton/dist/skeleton.css";
-import CardSkeletonUser from "../../components/CardSkeletonUser";
+import CardSkeletonUser from "../../components/CardSkeletonUser/index";
 import Header from "../../components/Header";
 import SearchUserBar from "../../components/SearchUserBar";
 import User from "../../components/User";
