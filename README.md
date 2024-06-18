@@ -14,7 +14,7 @@ GitMvst is a React-based web application built with TypeScript and Vite. It feat
 - [Running tests](#running-tests)
 - [Deploy with Vercel](#deploy-with-vercel)
 
-## 🛠️ Technologies
+## Technologies
 
 - [React](https://reactjs.org/)
 - [React DOM](https://reactjs.org/docs/react-dom.html)
