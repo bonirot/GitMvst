@@ -2,10 +2,10 @@ import "./home.css";
 import { useState, useEffect } from "react";
 import { IUser } from "../../interfaces/user.interface";
 import { fetchUsers } from "../../utils/fetch.functions";
-import Header from "../../components/Header";
-import SearchUser from "../../components/SearchUserBar";
 import "react-loading-skeleton/dist/skeleton.css";
 import CardSkeletonUser from "../../components/CardSkeletonUser";
+import Header from "../../components/Header";
+import SearchUserBar from "../../components/SearchUserBar";
 import User from "../../components/User";
 
 function Home() {
@@ -46,7 +46,7 @@ function Home() {
     <>
       <Header />
       <div className="searchUserContainer">
-        <SearchUser users={users} onSearch={handleSearchResults} />
+        <SearchUserBar users={users} onSearch={handleSearchResults} />
         <div className="userContainer">
           {filteredUsers.map((user) => (
             <User

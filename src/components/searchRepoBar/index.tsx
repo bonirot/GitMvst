@@ -7,7 +7,7 @@ type Props = {
   onSearch: (results: IRepository[]) => void;
 };
 
-function SearchRepo({ repos, onSearch }: Props) {
+function SearchRepoBar({ repos, onSearch }: Props) {
   const [searched, setSearched] = useState("");
 
   const search = (query: string) => {
@@ -42,4 +42,4 @@ function SearchRepo({ repos, onSearch }: Props) {
   );
 }
 
-export default SearchRepo;
+export default SearchRepoBar;

@@ -7,7 +7,7 @@ type Props = {
   onSearch: (results: IUser[]) => void;
 };
 
-function SearchUser({ users, onSearch }: Props) {
+function SearchUserBar({ users, onSearch }: Props) {
   const [searched, setSearched] = useState("");
 
   const search = (query: string) => {
@@ -42,4 +42,4 @@ function SearchUser({ users, onSearch }: Props) {
   );
 }
 
-export default SearchUser;
+export default SearchUserBar;

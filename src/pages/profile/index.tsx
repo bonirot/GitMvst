@@ -6,7 +6,7 @@ import { useParams } from "react-router-dom";
 import { FiBookOpen } from "react-icons/fi";
 import { LuBookMarked } from "react-icons/lu";
 import { GoProject } from "react-icons/go";
-import SearchRepo from "../../components/SearchRepoBar";
+import SearchRepoBar from "../../components/SearchRepoBar";
 import CardSkeletonProfile from "../../components/CardSkeletonProfile";
 import Header from "../../components/Header";
 import UserInfo from "../../components/UserInfo";
@@ -67,7 +67,7 @@ function Profile() {
               Projects
             </p>
           </nav>
-          <SearchRepo repos={repos} onSearch={handleSearchResults} />
+          <SearchRepoBar repos={repos} onSearch={handleSearchResults} />
           <div>
             {filteredRepos.map((repo) => (
               <Repo
