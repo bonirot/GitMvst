@@ -4,9 +4,9 @@ import { IUser } from "../../interfaces/user.interface";
 import { fetchUsers } from "../../utils/fetch.functions";
 import "react-loading-skeleton/dist/skeleton.css";
 import Header from "../../components/Header";
-import SearchUserBar from "../../components/SearchUserBar";
-import User from "../../components/User";
-import CardSkeletonUser from "../../components/CardSkeletonUser";
+import SearchUserBar from "../../components/searchUserBar";
+import User from "../../components/user";
+import CardSkeletonUser from "../../components/cardSkeletonUser";
 
 function Home() {
   const [users, setUsers] = useState([] as IUser[]);

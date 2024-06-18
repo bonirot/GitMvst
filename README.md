@@ -2,20 +2,20 @@
 
 # GitMvst
 
+![GitMvst](./public/GitMvst.png)
+
 This is an application similar to GitHub where you can search users, go to their prfolie and see the list of their repositories.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
 ## 🛠️ Tools
 
-- PNPM
-- Dotenv
-- React Dom
-- React Router Dom
-- React Icons
+- [Vite] (https://vitejs.dev)
+- [PNPM] (https://www.npmjs.com/package/pnpm)
+- [Dotenv] (https://www.npmjs.com/package/dotenv)
+- [React-Dom] (https://www.npmjs.com/package/react-dom)
+- [React-Router-Dom] (https://www.npmjs.com/package/react-router-dom)
+- [React-Icons] (https://react-icons.github.io/react-icons/)
+- [Skeleton] (https://www.npmjs.com/package/react-loading-skeleton)
+- [Vitest] (https://vitest.dev)
 
 If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
