@@ -6,7 +6,7 @@
 }
 
 .userInfoContainer_avatar {
-  width: 15rem;
+  width: 90%;
   border-radius: 2rem;
 }
 
@@ -41,7 +41,7 @@
 
 .userInfoContainer_text-followBtn {
   background-color: var(--first);
-  width: 20rem;
+  width: 90%;
   border: 0.1rem solid white;
   border-radius: 1rem;
   padding: 0.6rem;
@@ -115,4 +115,10 @@
 .userInfoContainer_text-followBtn:active {
   filter: brightness(0.7);
   transform: scale(0.98);
+}
+
+@media screen and (max-width: 768px) {
+  .userInfoContainer {
+    margin-bottom: 2rem;
+  }
 }

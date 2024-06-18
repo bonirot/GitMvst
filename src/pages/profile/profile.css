@@ -7,6 +7,10 @@
 }
 
 .repositoryContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 60%;
   padding: 2rem;
   background-color: var(--third);
@@ -19,6 +23,7 @@
   justify-content: space-around;
   flex-direction: row;
   align-items: center;
+  width: 90%;
   /* padding: 1rem 2rem; */
   /* background-color: #b3b3b3; */
   color: white;
@@ -61,8 +66,10 @@
   font-size: 1.4rem;
 }
 
-@media (min-width: 768px) {
+@media screen and (max-width: 768px) {
   .profilePageContainer {
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
   }
 }
