@@ -7,7 +7,7 @@ import { FiBookOpen } from "react-icons/fi";
 import { LuBookMarked } from "react-icons/lu";
 import { GoProject } from "react-icons/go";
 import SearchRepo from "../../components/SearchRepoBar";
-import CardSkeletonUserInfo from "../../components/CardSkeletonUserInfo";
+import CardSkeletonProfile from "../../components/CardSkeletonProfile";
 import Header from "../../components/Header";
 import UserInfo from "../../components/UserInfo";
 import Repo from "../../components/Repository";
@@ -40,7 +40,7 @@ function Profile() {
   };
 
   if (loading) {
-    return <CardSkeletonUserInfo />;
+    return <CardSkeletonProfile />;
   }
 
   if (error) {

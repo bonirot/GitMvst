@@ -1,5 +1,5 @@
 import Header from "../Header";
-import "./cardSkeletonUserInfo.css";
+import "./cardSkeletonProfile.css";
 import Skeleton from "react-loading-skeleton";
 
 function CardSkeletonUserInfo() {
@@ -16,12 +16,7 @@ function CardSkeletonUserInfo() {
           </div>
         </div>
         <div className="card-skeleton-repo">
-          <div className="card-skeleton_user">
-            <Skeleton borderRadius={20} width={120} height={120} />
-          </div>
-          <div className="card-skeleton_name">
-            <Skeleton borderRadius={8} width={140} height={30} />
-          </div>
+          <Skeleton count={10} />
         </div>
       </div>
     </>
