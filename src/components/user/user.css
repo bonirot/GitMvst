@@ -1,7 +1,6 @@
 .userContainer_card {
   display: flex;
   justify-content: center;
-  /* border: 1px solid green; */
   background: var(--third);
   border-radius: 1.5rem;
   width: 15rem;
@@ -54,10 +53,7 @@
   margin: 1rem;
   color: white;
 }
-/* 
-  .userContainer_card-username:hover {
-    background-color: var(--);
-  } */
+
 .userInfoContainer_text-user,
 .userInfoContainer_text-follow,
 .userInfoContainer_text-location {

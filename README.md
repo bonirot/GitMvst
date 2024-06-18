@@ -1,22 +1,66 @@
-`#react` `#vite` `#react-icons`
+`#react` `#vite` `#react-icons` `#vitest`
 
 # GitMvst
 
 ![GitMvst](./public/GitMvst.png)
 
-This is an application similar to GitHub where you can search users, go to their profile and see the list of their repositories.
+GitMvst is a React-based web application built with TypeScript and Vite. It features routing, react icons and loading skeletons. In this application, similar to GitHub, you can search users, go to their profile and see the list of their repositories.
 
-## 🛠️ Tools
+## Table of Contents
 
-- [Vite](https://vitejs.dev)
+- [Technologies](#technologies)
+- [Getting Started](#getting-started)
+  ?????
+- [Project Structure](#project-structure)
+- [Contributing](#contributing)
+- [License](#license)
+
+## 🛠️ Technologies
+
+- [React](https://reactjs.org/)
+- [React DOM](https://reactjs.org/docs/react-dom.html)
+- [React Icons](https://react-icons.github.io/react-icons/)
+- [React Loading Skeleton](https://www.npmjs.com/package/react-loading-skeleton)
+- [React Router DOM](https://reactrouter.com/)
 - [PNPM](https://www.npmjs.com/package/pnpm)
 - [Dotenv](https://www.npmjs.com/package/dotenv)
-- [React-Dom](https://www.npmjs.com/package/react-dom)
-- [React-Router-Dom](https://www.npmjs.com/package/react-router-dom)
-- [React-Icons](https://react-icons.github.io/react-icons/)
-- [Skeleton](https://www.npmjs.com/package/react-loading-skeleton)
-- [Vitest](https://vitest.dev)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Vite](https://vitejs.dev/)
+- [Vitest](https://vitest.dev/)
+
+## Getting Started
+
+### Installation
+
+1. Clone the repository:
+
+   ```sh
+   git clone https://github.com/yourusername/gitmvst.git
+   cd gitmvst
+   ```
+
+2. Install dependencies:
+
+   ```sh
+   npm install pnpm
+   ```
+
+   ```sh
+   pnpm install
+   ```
+
+3. Create a .env.development file.
+
+### Running the Development Server
+
+To start the development server, run:
+
+```sh
+pnpm run dev
+```
 
 ## Deploy with Vercel
+
+Here you can find the project deployed with [Vercel](https://vercel.com).
 
 [GitMvst](https://git-mvst.vercel.app)

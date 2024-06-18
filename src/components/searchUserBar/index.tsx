@@ -12,7 +12,7 @@ function SearchUserBar({ users, onSearch }: Props) {
 
   const search = (query: string) => {
     if (!query) {
-      onSearch(users); // Devolver todos los usuarios si no hay búsqueda
+      onSearch(users);
       return;
     }
 

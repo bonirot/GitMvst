@@ -16,7 +16,6 @@ function UserInfo() {
   useEffect(() => {
     const getUser = async () => {
       if (username) {
-        // is username indefined?
         try {
           const userData = await fetchUserProfile(username);
           setUser(userData);
@@ -26,7 +25,6 @@ function UserInfo() {
           setLoading(false);
         }
       } else {
-        //in case there is no username, then throw and error
         setError("Username is not provided");
         setLoading(false);
       }

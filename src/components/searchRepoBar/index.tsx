@@ -12,7 +12,7 @@ function SearchRepoBar({ repos, onSearch }: Props) {
 
   const search = (query: string) => {
     if (!query) {
-      onSearch(repos); //esto devuelve todos los repos si no buscas nada
+      onSearch(repos);
       return;
     }
 
@@ -20,7 +20,7 @@ function SearchRepoBar({ repos, onSearch }: Props) {
       repo.name.toLowerCase().includes(query.toLowerCase())
     );
 
-    onSearch(filteredRepos); // devuelve las coincidencias
+    onSearch(filteredRepos);
   };
 
   useEffect(() => {

@@ -27,8 +27,3 @@ function CardSkeletonUser() {
 }
 
 export default CardSkeletonUser;
-
-/* <div key={index} className="card-skeleton_user">
-<Skeleton circle={true} height={50} width={50} />
-<Skeleton height={20} width={`80%`} />
-</div> */
