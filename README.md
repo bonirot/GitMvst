@@ -1,4 +1,4 @@
-`#react` `#vite` `#react-icons` `#vitest`
+`#react` `#vite` `#react-icons` `#vitest` `#typescript` `#pnpm` `#dotenv`
 
 # GitMvst
 
@@ -10,10 +10,9 @@ GitMvst is a React-based web application built with TypeScript and Vite. It feat
 
 - [Technologies](#technologies)
 - [Getting Started](#getting-started)
-  ?????
-- [Project Structure](#project-structure)
-- [Contributing](#contributing)
-- [License](#license)
+- [Running the Development Server](#running-the-development-server)
+- [Running tests](#running-tests)
+- [Deploy with Vercel](#deploy-with-vercel)
 
 ## 🛠️ Technologies
 
@@ -51,12 +50,20 @@ GitMvst is a React-based web application built with TypeScript and Vite. It feat
 
 3. Create a .env.development file.
 
-### Running the Development Server
+## Running the Development Server
 
 To start the development server, run:
 
 ```sh
 pnpm run dev
+```
+
+## Running tests
+
+To run the tests, type:
+
+```sh
+pnpm test
 ```
 
 ## Deploy with Vercel
