@@ -1,10 +1,10 @@
-`#react`, `#vite`, `#react-icons`
+`#react` `#vite` `#react-icons`
 
 # GitMvst
 
 ![GitMvst](./public/GitMvst.png)
 
-This is an application similar to GitHub where you can search users, go to their prfolie and see the list of their repositories.
+This is an application similar to GitHub where you can search users, go to their profile and see the list of their repositories.
 
 ## 🛠️ Tools
 
