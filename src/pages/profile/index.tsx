@@ -1,16 +1,16 @@
 import "./profile.css";
-import UserInfo from "../../components/userInfo";
 import { useEffect, useState } from "react";
 import { IRepository } from "../../interfaces/repo.interface";
 import { fetchRepos } from "../../utils/fetch.functions";
 import { useParams } from "react-router-dom";
-import Repo from "../../components/repository";
 import { FiBookOpen } from "react-icons/fi";
 import { LuBookMarked } from "react-icons/lu";
 import { GoProject } from "react-icons/go";
-import SearchRepo from "../../components/searchRepoBar";
-import CardSkeletonUserInfo from "../../components/cardSkeletonUserInfo";
+import SearchRepo from "../../components/SearchRepoBar";
+import CardSkeletonUserInfo from "../../components/CardSkeletonUserInfo";
 import Header from "../../components/Header";
+import UserInfo from "../../components/UserInfo";
+import Repo from "../../components/Repository";
 
 function Profile() {
   const { username } = useParams<{ username: string | undefined }>();
