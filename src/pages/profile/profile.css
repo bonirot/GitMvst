@@ -7,10 +7,6 @@
 }
 
 .repositoryContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   width: 60%;
   padding: 2rem;
   background-color: var(--third);
@@ -23,7 +19,7 @@
   justify-content: space-around;
   flex-direction: row;
   align-items: center;
-  width: 90%;
+  width: 100%;
   color: white;
   border-bottom: 0.03rem solid var(--first);
 }
