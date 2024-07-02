@@ -12,26 +12,24 @@
   --red: #ba2929;
 }
 
-/* Personalización de la barra de desplazamiento para navegadores basados en WebKit */
 ::-webkit-scrollbar {
-  width: 12px; /* Ancho de la barra de desplazamiento vertical */
-  height: 12px; /* Altura de la barra de desplazamiento horizontal */
+  width: 12px;
+  height: 12px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1; /* Color de fondo de la pista de la barra de desplazamiento */
+  background: #f1f1f1;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #888; /* Color de la manija de la barra de desplazamiento */
-  border-radius: 10px; /* Bordes redondeados de la manija */
+  background: #888;
+  border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #555; /* Color de la manija de la barra de desplazamiento al pasar el cursor */
+  background: #555;
 }
 
-/* Opcional: personalizar la esquina de la barra de desplazamiento en la intersección de las barras horizontal y vertical */
 ::-webkit-scrollbar-corner {
-  background: #f1f1f1; /* Color de fondo de la esquina de la barra de desplazamiento */
+  background: #f1f1f1;
 }
